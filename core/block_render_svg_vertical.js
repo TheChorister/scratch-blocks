@@ -42,98 +42,98 @@ Blockly.BlockSvg.GRID_UNIT = 4;
  * Horizontal space between elements.
  * @const
  */
-Blockly.BlockSvg.SEP_SPACE_X = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.SEP_SPACE_X = () => 2 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Vertical space between elements.
  * @const
  */
-Blockly.BlockSvg.SEP_SPACE_Y = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.SEP_SPACE_Y = () => 2 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of a block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X = 16 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X = () => 16 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of a block with output (reporters).
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X_OUTPUT = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X_OUTPUT = () => 12 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of a shadow block with output (single fields).
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X_SHADOW_OUTPUT = 10 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X_SHADOW_OUTPUT = () => 10 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum height of a block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_Y = () => 12 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of extra row after a statement input.
  * @const
  */
-Blockly.BlockSvg.EXTRA_STATEMENT_ROW_Y = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.EXTRA_STATEMENT_ROW_Y = () => 8 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of a C- or E-shaped block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X_WITH_STATEMENT = 40 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X_WITH_STATEMENT = () => 40 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum height of a shadow block with output and a single field.
  * This is used for shadow blocks that only contain a field - which are smaller than even reporters.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y_SINGLE_FIELD_OUTPUT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_Y_SINGLE_FIELD_OUTPUT = () => 8 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum height of a non-shadow block with output, i.e. a reporter.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y_REPORTER = 10 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_Y_REPORTER = () => 10 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum space for a statement input height.
  * @const
  */
-Blockly.BlockSvg.MIN_STATEMENT_INPUT_HEIGHT = 6 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_STATEMENT_INPUT_HEIGHT = () => 6 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Width of vertical notch.
  * @const
  */
-Blockly.BlockSvg.NOTCH_WIDTH = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.NOTCH_WIDTH = () => 8 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of vertical notch.
  * @const
  */
-Blockly.BlockSvg.NOTCH_HEIGHT = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.NOTCH_HEIGHT = () => 2 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Rounded corner radius.
  * @const
  */
-Blockly.BlockSvg.CORNER_RADIUS = 1 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.CORNER_RADIUS = () => 1 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of statement input edge on the left, in px.
  * @const
  */
-Blockly.BlockSvg.STATEMENT_INPUT_EDGE_WIDTH = 4 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.STATEMENT_INPUT_EDGE_WIDTH = () => 4 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Inner space between edge of statement input and notch.
  * @const
  */
-Blockly.BlockSvg.STATEMENT_INPUT_INNER_SPACE = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.STATEMENT_INPUT_INNER_SPACE = () => 2 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of the top hat.
@@ -146,7 +146,7 @@ Blockly.BlockSvg.START_HAT_HEIGHT = 16;
  * of a block, such as extension icons.
  * @const
  */
-Blockly.BlockSvg.ICON_SEPARATOR_HEIGHT = 10 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.ICON_SEPARATOR_HEIGHT = () => 10 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Path of the top hat's curve.
@@ -186,20 +186,19 @@ Blockly.BlockSvg.NOTCH_PATH_RIGHT = (
  * Amount of padding before the notch.
  * @const
  */
-Blockly.BlockSvg.NOTCH_START_PADDING = 3 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.NOTCH_START_PADDING = () => 3 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * SVG start point for drawing the top-left corner.
  * @const
  */
-Blockly.BlockSvg.TOP_LEFT_CORNER_START =
-    'm 0,' + Blockly.BlockSvg.CORNER_RADIUS;
+Blockly.BlockSvg.TOP_LEFT_CORNER_START = () => 'm 0,' + Blockly.BlockSvg.CORNER_RADIUS;
 
 /**
  * SVG path for drawing the rounded top-left corner.
  * @const
  */
-Blockly.BlockSvg.TOP_LEFT_CORNER =
+Blockly.BlockSvg.TOP_LEFT_CORNER = () =>
     'A ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,1 ' +
     Blockly.BlockSvg.CORNER_RADIUS + ',0';
@@ -208,7 +207,7 @@ Blockly.BlockSvg.TOP_LEFT_CORNER =
  * SVG path for drawing the rounded top-right corner.
  * @const
  */
-Blockly.BlockSvg.TOP_RIGHT_CORNER =
+Blockly.BlockSvg.TOP_RIGHT_CORNER = () =>
     'a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,1 ' +
     Blockly.BlockSvg.CORNER_RADIUS + ',' +
@@ -218,7 +217,7 @@ Blockly.BlockSvg.TOP_RIGHT_CORNER =
  * SVG path for drawing the rounded bottom-right corner.
  * @const
  */
-Blockly.BlockSvg.BOTTOM_RIGHT_CORNER =
+Blockly.BlockSvg.BOTTOM_RIGHT_CORNER = () =>
     ' a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,1 -' +
     Blockly.BlockSvg.CORNER_RADIUS + ',' +
@@ -228,7 +227,7 @@ Blockly.BlockSvg.BOTTOM_RIGHT_CORNER =
  * SVG path for drawing the rounded bottom-left corner.
  * @const
  */
-Blockly.BlockSvg.BOTTOM_LEFT_CORNER =
+Blockly.BlockSvg.BOTTOM_LEFT_CORNER = () =>
     'a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
      Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,1 -' +
      Blockly.BlockSvg.CORNER_RADIUS + ',-' +
@@ -238,7 +237,7 @@ Blockly.BlockSvg.BOTTOM_LEFT_CORNER =
  * SVG path for drawing the top-left corner of a statement input.
  * @const
  */
-Blockly.BlockSvg.INNER_TOP_LEFT_CORNER =
+Blockly.BlockSvg.INNER_TOP_LEFT_CORNER = () =>
     ' a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,0 -' +
     Blockly.BlockSvg.CORNER_RADIUS + ',' +
@@ -249,7 +248,7 @@ Blockly.BlockSvg.INNER_TOP_LEFT_CORNER =
  * Includes the rounded inside corner.
  * @const
  */
-Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER =
+Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER = () =>
     'a ' + Blockly.BlockSvg.CORNER_RADIUS + ',' +
     Blockly.BlockSvg.CORNER_RADIUS + ' 0 0,0 ' +
     Blockly.BlockSvg.CORNER_RADIUS + ',' +
@@ -259,7 +258,7 @@ Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER =
  * SVG path for an empty hexagonal input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL =
+Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL = () =>
     'M ' + 4 * Blockly.BlockSvg.GRID_UNIT + ',0 ' +
     ' h ' + 4 * Blockly.BlockSvg.GRID_UNIT +
     ' l ' + 4 * Blockly.BlockSvg.GRID_UNIT + ',' + 4 * Blockly.BlockSvg.GRID_UNIT +
@@ -273,13 +272,13 @@ Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL =
  * Width of empty boolean input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL_WIDTH = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL_WIDTH = () => 12 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * SVG path for an empty square input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_SQUARE =
+Blockly.BlockSvg.INPUT_SHAPE_SQUARE = () =>
     Blockly.BlockSvg.TOP_LEFT_CORNER_START +
     Blockly.BlockSvg.TOP_LEFT_CORNER +
     ' h ' + (12 * Blockly.BlockSvg.GRID_UNIT - 2 * Blockly.BlockSvg.CORNER_RADIUS) +
@@ -294,14 +293,14 @@ Blockly.BlockSvg.INPUT_SHAPE_SQUARE =
  * Width of empty square input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_SQUARE_WIDTH = 10 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_SQUARE_WIDTH = () => 10 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * SVG path for an empty round input shape.
  * @const
  */
 
-Blockly.BlockSvg.INPUT_SHAPE_ROUND =
+Blockly.BlockSvg.INPUT_SHAPE_ROUND = () =>
   'M ' + (4 * Blockly.BlockSvg.GRID_UNIT) + ',0' +
   ' h ' + (4 * Blockly.BlockSvg.GRID_UNIT) +
   ' a ' + (4 * Blockly.BlockSvg.GRID_UNIT) + ' ' +
@@ -315,25 +314,25 @@ Blockly.BlockSvg.INPUT_SHAPE_ROUND =
  * Width of empty round input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_ROUND_WIDTH = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_ROUND_WIDTH = () => 12 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of empty input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_HEIGHT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_HEIGHT = () => 8 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of user inputs
  * @const
  */
-Blockly.BlockSvg.FIELD_HEIGHT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_HEIGHT = () => 8 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Width of user inputs
  * @const
  */
-Blockly.BlockSvg.FIELD_WIDTH = 6 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_WIDTH = () => 6 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Editable field padding (left/right of the text).
@@ -345,19 +344,19 @@ Blockly.BlockSvg.EDITABLE_FIELD_PADDING = 6;
  * Square box field padding (left/right of the text).
  * @const
  */
-Blockly.BlockSvg.BOX_FIELD_PADDING = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.BOX_FIELD_PADDING = () => 2 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Drop-down arrow padding.
  * @const
  */
-Blockly.BlockSvg.DROPDOWN_ARROW_PADDING = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.DROPDOWN_ARROW_PADDING = () => 2 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of user inputs during editing
  * @const
  */
-Blockly.BlockSvg.FIELD_WIDTH_MIN_EDIT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_WIDTH_MIN_EDIT = () => 8 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Maximum width of user inputs during editing
@@ -369,31 +368,31 @@ Blockly.BlockSvg.FIELD_WIDTH_MAX_EDIT = Infinity;
  * Maximum height of user inputs during editing
  * @const
  */
-Blockly.BlockSvg.FIELD_HEIGHT_MAX_EDIT = Blockly.BlockSvg.FIELD_HEIGHT;
+Blockly.BlockSvg.FIELD_HEIGHT_MAX_EDIT = () => Blockly.BlockSvg.FIELD_HEIGHT;
 
 /**
  * Top padding of user inputs
  * @const
  */
-Blockly.BlockSvg.FIELD_TOP_PADDING = 0.5 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_TOP_PADDING = () => 0.5 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Corner radius of number inputs
  * @const
  */
-Blockly.BlockSvg.NUMBER_FIELD_CORNER_RADIUS = 4 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.NUMBER_FIELD_CORNER_RADIUS = () => 4 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Corner radius of text inputs
  * @const
  */
-Blockly.BlockSvg.TEXT_FIELD_CORNER_RADIUS = 1 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.TEXT_FIELD_CORNER_RADIUS = () => 1 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Default radius for a field, in px.
  * @const
  */
-Blockly.BlockSvg.FIELD_DEFAULT_CORNER_RADIUS = 4 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_DEFAULT_CORNER_RADIUS = () => 4 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Max text display length for a field (per-horizontal/vertical)
@@ -406,13 +405,13 @@ Blockly.BlockSvg.MAX_DISPLAY_LENGTH = Infinity;
  * Ensures that inputs will not overlap with the top notch of blocks.
  * @const
  */
-Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X = () => 12 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Vertical padding around inline elements.
  * @const
  */
-Blockly.BlockSvg.INLINE_PADDING_Y = 1 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INLINE_PADDING_Y = () => 1 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Point size of text field before animation. Must match size in CSS.
@@ -445,7 +444,7 @@ Blockly.BlockSvg.FIELD_TEXTINPUT_ANIMATE_POSITIONING = false;
  * on its left or right edge, that side is extended by the padding specified.
  * See also: `Blockly.BlockSvg.computeOutputPadding_`.
  */
-Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = {
+Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = () => {
   1: { // Outer shape: hexagon.
     0: 5 * Blockly.BlockSvg.GRID_UNIT, // Field in hexagon.
     1: 2 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in hexagon.
@@ -470,13 +469,13 @@ Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = {
  * Corner radius of the hat on the define block.
  * @const
  */
-Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS = 5 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS = () => 5 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * SVG path for drawing the rounded top-left corner.
  * @const
  */
-Blockly.BlockSvg.TOP_LEFT_CORNER_DEFINE_HAT =
+Blockly.BlockSvg.TOP_LEFT_CORNER_DEFINE_HAT = () =>
     'a ' + Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS + ',' +
     Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS + ' 0 0,1 ' +
     Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS + ',-' +
@@ -486,7 +485,7 @@ Blockly.BlockSvg.TOP_LEFT_CORNER_DEFINE_HAT =
  * SVG path for drawing the rounded top-left corner.
  * @const
  */
-Blockly.BlockSvg.TOP_RIGHT_CORNER_DEFINE_HAT =
+Blockly.BlockSvg.TOP_RIGHT_CORNER_DEFINE_HAT = () =>
     'a ' + Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS + ',' +
     Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS + ' 0 0,1 ' +
     Blockly.BlockSvg.DEFINE_HAT_CORNER_RADIUS + ',' +
@@ -496,7 +495,7 @@ Blockly.BlockSvg.TOP_RIGHT_CORNER_DEFINE_HAT =
  * Padding on the right side of the internal block on the define block.
  * @const
  */
-Blockly.BlockSvg.DEFINE_BLOCK_PADDING_RIGHT = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.DEFINE_BLOCK_PADDING_RIGHT = () => 2 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Change the colour of a block.
